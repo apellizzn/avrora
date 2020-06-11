@@ -32,7 +32,7 @@ defmodule Avrora.Config do
   def schemas_path, do: get_env(:schemas_path, Path.expand("./priv/schemas"))
 
   @doc false
-  def registry_url, do: get_env(:registry_url, nil)
+  def registry_url, do: "http://test.com"
 
   @doc false
   def registry_auth, do: get_env(:registry_auth, nil)
